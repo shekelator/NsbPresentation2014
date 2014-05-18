@@ -1,9 +1,13 @@
 {
-	"name": "NsbPresentation2014",
-	"description": "A Presentation on Low-Friction SOA/EDA with NServiceBus",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"express": "4.2.0"
-	}
+  "name": "NsbPresentation2014",
+  "description": "A Presentation on Low-Friction SOA/EDA with NServiceBus",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "4.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-sass": "^0.7.1"
+  }
 }
