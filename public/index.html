@@ -5,11 +5,11 @@
 	</head>
 	<body>
 		<div id="impress">
-			<div id="start" class="step slide">
+			<header id="start" class="step slide">
 				<p>
 					Low-Friction SOA with NServiceBus
 				</p>
-			</div>
+			</header>
 			<div id="slide2" class="step slide" data-x="1200" data-y="0">
 				<p>Hi, I'm Dave, and I have a monolithic legacy system</p>
 				<p class="fade-in">(Hi, Dave)</p>
@@ -17,7 +17,48 @@
 
 			</div>
 			<div id="monolith" class="step" data-x="0" data-y="1200" data-rotate="90" data-scale="1">
+				<h2>Wai u no like monolith?</h2>
+				<p>Well, for starters:</p>
+				<ul>
+					<li>Everything is coupled, so it's difficult to know what will be impacted by a change</li>
+					<li>System is too complicated to grok</li>
+				</ul>
 			</div>
+
+			<div id="fences" class="step" data-x="800" data-y="2000" data-rotate-x="-40" data-scale="1">
+				<h2>We needed to break it up</h2>
+				<ul>
+					<li>Good fences make good neighbors</li>
+					<li>You know where the coupling is</li>
+					<li>Smaller pieces can be changed more easily (As long as they fulfill their contract)</li>
+				</ul>
+			</div>
+
+			<div id="decisions" class="step" data-x="800" data-y="2800" data-rotate-x="-40" data-scale="2">
+				<h2>Architectural decisions</h2>
+				<p>How do the components communicate?</p>
+				<ul>
+					<li>Semantically: "Do this!" vs. "I did this"</li>
+					<li>Technically: HTTP? Sync vs. async?</li>
+				</ul>
+				
+			</div>
+
+			<div id="why-not" class="step" data-x="800" data-y="3600" data-rotate-x="-40" data-scale="4">
+				<h2>Why not RPC?</h2>
+				<ul>
+					<li>Services should be autonomous</li>
+					<li>Fallacies of Distributed Computing</li>
+				</ul>
+				<h2>Why not HTTP?</h2>
+				<ul>
+					<li>Not durable/transactional</li>
+					<li>Synchronous => tends toward temporal coupling</li>
+				</ul>
+			</div>
+
+			<footer id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+			</footer>
 		</div>
 
 		<script type="text/javascript" src="components/impress.js/js/impress.js"></script>

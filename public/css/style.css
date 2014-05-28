@@ -39,22 +39,44 @@
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s; }
 
-div#start {
+#start {
   width: 1000px; }
-  div#start p {
+  #start p {
     font-size: 80px; }
 
 body {
-  background: #d7d7d7; }
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: -1px;
+  background: #d7d7d7;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#f0f0f0), to(#bebebe));
+  background: -webkit-radial-gradient(#f0f0f0, #bebebe);
+  background: -moz-radial-gradient(#f0f0f0, #bebebe);
+  background: -ms-radial-gradient(#f0f0f0, #bebebe);
+  background: -o-radial-gradient(#f0f0f0, #bebebe);
+  background: radial-gradient(#f0f0f0, #bebebe); }
+  body div, body header, body footer, body section {
+    text-align: center;
+    width: 900px;
+    height: 700px; }
+    body div ul, body header ul, body footer ul, body section ul {
+      text-align: left; }
+      body div ul li, body header ul li, body footer ul li, body section ul li {
+        padding-bottom: 0.5em; }
 
-div.step {
+.step {
   width: 100%;
-  font-size: 24px; }
+  opacity: 0.25;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+  .step.active {
+    opacity: 1; }
 
-div.slide {
+.slide {
   display: block;
-  width: 900px;
-  height: 700px;
   padding: 40px 60px;
   text-align: center;
   background-color: white;
@@ -62,10 +84,7 @@ div.slide {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   color: #666666;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 30px;
-  letter-spacing: -1px; }
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
 
 .hiDave {
   -webkit-transition-delay: 2s;
