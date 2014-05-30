@@ -44,7 +44,17 @@
 				
 			</div>
 
-			<div id="why-not" class="step" data-x="800" data-y="3600" data-rotate-x="-40" data-scale="4">
+			<div id="boom" class="step" data-x="800" data-y="2800" data-scale=".025" data-rotate-x="-40">
+				<img src="images/boom.png"/>
+			</div>
+
+			<div id="philosophy" class="step" data-x="1400" data-y="2800" data-rotate="45">
+				<p>This is core to SOA in the NServiceBus style: </p>
+				<p><strong>Service Autonomy</strong></p>
+				<p>Services are in control of their destiny. Instead of getting bossed around, they observe events and do what is necessary to fulfill the business capabilities for which they are responsible for</p>
+			</div>
+
+			<div id="why-not" class="step" data-x="2200" data-y="3600" data-rotate-x="-40" data-scale="4">
 				<h2>Why not RPC?</h2>
 				<ul>
 					<li>Services should be autonomous</li>
@@ -56,6 +66,44 @@
 					<li>Synchronous => tends toward temporal coupling</li>
 				</ul>
 			</div>
+
+			<div id="nservicebus" class="step" data-x="2200" data-y="4800" data-scale="4">
+				<h2>NServiceBus makes it easy</h2>
+				<ul>
+					<li>Asynchronous (durable) messaging</li>
+					<li>Bus vs. Broker</li>
+					<li>Point-to-point and publish-subscribe</li>
+					<li>Multiple transport options
+						<ul>
+							<li>MSMQ (default)</li>
+							<li>RabbitMQ</li>
+							<li>SQL Server</li>
+							<li>Azure Service Bus/Azure Storage Queues</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div id="nservicebus2" class="step" data-x="1200" data-y="5600" data-scale="1" data-rotate="-45">
+				<h2>MOAR EASY THINGS</h2>
+				<ul>
+					<li>Use of Microsoft DTC makes localized transactions easy</li>
+					<li>Sagas
+						<ul>
+							<li>Long-running processes</li>
+							<li>State machine: class that handles multiple events and maintains state</li>
+							<li>Can perform any processing or persistence like a normal handler</li>
+							<li>Useful for out-of-order messages</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+
+			<footer id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+			</footer>
+		</div>
+
 
 			<footer id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
 			</footer>

@@ -62,11 +62,11 @@ body {
     body div ul, body header ul, body footer ul, body section ul {
       text-align: left; }
       body div ul li, body header ul li, body footer ul li, body section ul li {
-        padding-bottom: 0.5em; }
+        padding-top: 0.5em; }
 
 .step {
   width: 100%;
-  opacity: 0.25;
+  opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
@@ -86,9 +86,13 @@ body {
   color: #666666;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
 
+/** slide-specific styles **/
 .hiDave {
   -webkit-transition-delay: 2s;
   -moz-transition-delay: 2s;
   -ms-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s; }
+
+#boom.step img {
+  height: 90%; }

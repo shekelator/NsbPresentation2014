@@ -78,7 +78,7 @@ body {
 	    	text-align: left;
 
 	    	li {
-	    		padding-bottom: .5em;
+	    		padding-top: .5em;
 	    	}
 	    }
     }
@@ -86,7 +86,7 @@ body {
 
 .step {
 	width: 100%;
-	opacity: .25;
+	opacity: 0;
 	@include opacity-transition(1s);
 
 	&.active { opacity: 1 }
@@ -108,6 +108,15 @@ body {
 
 }
 
+/** slide-specific styles **/
+
 .hiDave {
 	@include transition-delay(2.0s);
 }
+
+#boom.step {
+	img {
+		height: 90%;
+	}
+}
+
