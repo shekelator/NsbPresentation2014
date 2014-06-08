@@ -1,0 +1,26 @@
+Notes:
+
+1) Who's familiar with these:
+	- NServiceBus
+	- EDA
+	- SOA
+	- Pub/sub
+
+2) Who has worked on significantly-sized monolithic system?
+	- Tried to make it better? How?
+
+
+
+Service autonomy:
+	- Think of Pro Teck, accepting orders
+	- It's easy to add components that react to business events
+	- Also auditing, tracking are easy
+	- Monitoring a distributed, decoupled system is difficult, but pub/sub makes it easier
+
+	- Conway's Law: organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
+	- Services are people, too! SOA isn't just about organizing software, but organizing business capabilities, including the organizations/departments the support those capabilities. Ideally a "service" supports and is supported by a group of people.
+
+	
+
+
+

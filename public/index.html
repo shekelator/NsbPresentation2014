@@ -32,15 +32,20 @@
 					<li>You know where the coupling is</li>
 					<li>Smaller pieces can be changed more easily (As long as they fulfill their contract)</li>
 				</ul>
+				<p><img src="/images/SOA_and_data_access.png"/></p>
+
 			</div>
 
 			<div id="decisions" class="step" data-x="800" data-y="2800" data-rotate-x="-40" data-scale="2">
 				<h2>Architectural decisions</h2>
 				<p>How do the components communicate?</p>
 				<ul>
-					<li>Semantically: "Do this!" vs. "I did this"</li>
 					<li>Technically: HTTP? Sync vs. async?</li>
+					<li>Service bus?</li>
+					<li>Semantically: "Do this!" vs. "I did this"</li>
 				</ul>
+				<p>&nbsp;</p>
+				<p><img src="/images/SOA_rough.png"/></p>
 				
 			</div>
 
@@ -49,8 +54,7 @@
 			</div>
 
 			<div id="philosophy" class="step" data-x="1400" data-y="2800" data-rotate="45">
-				<p>This is core to SOA in the NServiceBus style: </p>
-				<p><strong>Service Autonomy</strong></p>
+				<p><strong>Service Autonomy</strong> is a core SOA concept in the NServiceBus style</p>
 				<p>Services are in control of their destiny. Instead of getting bossed around, they observe events and do what is necessary to fulfill the business capabilities for which they are responsible for</p>
 			</div>
 
@@ -63,8 +67,10 @@
 				<h2>Why not HTTP?</h2>
 				<ul>
 					<li>Not durable/transactional</li>
-					<li>Synchronous => tends toward temporal coupling</li>
+					<li>Fundamentally synchronous => tends toward temporal coupling</li>
+					<li>Point-to-point => No built-in publish-subscribe mechanism</li>
 				</ul>
+				<p><strong>EDA/pub-sub brings flexibility and evolvability</strong></p>
 			</div>
 
 			<div id="nservicebus" class="step" data-x="2200" data-y="4800" data-scale="4">
@@ -88,15 +94,16 @@
 				<h2>MOAR EASY THINGS</h2>
 				<ul>
 					<li>Use of Microsoft DTC makes localized transactions easy</li>
+					<li>Auditing</li>
 					<li>Sagas
 						<ul>
 							<li>Long-running processes</li>
-							<li>State machine: class that handles multiple events and maintains state</li>
+							<li>State machine: class that handles multiple messages and maintains state</li>
 							<li>Can perform any processing or persistence like a normal handler</li>
 							<li>Useful for out-of-order messages</li>
+							<li>Persist themselves transparently</li>
 						</ul>
 					</li>
-
 				</ul>
 			</div>
 
