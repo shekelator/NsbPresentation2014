@@ -20,7 +20,13 @@ Service autonomy:
 	- Conway's Law: organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations
 	- Services are people, too! SOA isn't just about organizing software, but organizing business capabilities, including the organizations/departments the support those capabilities. Ideally a "service" supports and is supported by a group of people.
 
+
+Bus vs. broker
+	- With Bus, there is no centralized "thing" that routes messages. Rather, each service subscribes to the message producers it cares about or sends point-to-point messages to the services it knows about.
+	- This removes the broker from being locus of complexity
+	- Also can be more reliable
 	
+
 
 
 
